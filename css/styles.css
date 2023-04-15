@@ -1,23 +1,39 @@
 body {
   background: #ffffff;
-  font-family: Roboto;
-  color: #2e2f42;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  color: var(--main-text-color);
+}
+:root {
+  --main-text-color: #434455;
+  --heading-text-color: #2e2f42;
+  --filter-btn-text-color: #4d5ae5;
+}
+.link {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--main-text);
+}
+.list {
+  list-style: none;
 }
 /* Header */
 .header-nav {
-  text-decoration: none;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
   letter-spacing: 0.02em;
+  color: var(--heading-text-color);
+}
+.header-nav:focus,
+.header-nav:hover {
+  color: #404bbf;
 }
 .logo-web {
-  text-decoration: none;
-  font-style: normal;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.17em;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
@@ -25,91 +41,87 @@ body {
   color: #4d5ae5;
 }
 .logo-studio {
-  color: #2e2f42;
+  color: var(--heading-text-color);
 }
 .address {
-  text-decoration: none;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--main-text-color);
 }
-/* Hero */
+.address-link {
+  color: var(--main-text-color);
+}
+.address-link:hover,
+.address-link:focus {
+  color: #404bbf;
+}
+/* Hero section 1*/
 .hero {
   background-color: #2e2f42;
 }
 .hero-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1.07em;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
 .hero-btn {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 16px 32px;
-  gap: 10px;
-  width: 169px;
-  height: 56px;
+  font-family: inherit;
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
+  letter-spacing: 0.04em;
+  cursor: pointer;
 }
-.hero-btn:hover {
+.hero-btn:hover,
+.hero-btn:focus {
   background: #404bbf;
 }
-/* Our advantages */
+/* Our advantages section 2*/
 .advantages-title {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2em;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--heading-text-color);
 }
 .advantages-desc {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--main-text-color);
 }
-/* What are we doing */
+/* What are we doing section 3*/
 .doing-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11em;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--heading-text-color);
 }
-/* Our Team */
+/* Our Team section 4*/
 .team-section {
   background-color: #f4f4fd;
 }
 .team-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11em;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--heading-text-color);
 }
 .team-card {
   width: 264px;
@@ -120,33 +132,30 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .team-card-title {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2em;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--heading-text-color);
 }
 .team-card-desc {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--main-text-color);
 }
 /* Footer */
 .footer {
   background-color: #2e2f42;
 }
 .footer-logo-web {
-  text-decoration: none;
-  font-style: normal;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.17em;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
@@ -157,30 +166,31 @@ body {
   color: #f4f4fd;
 }
 .footer-desc {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
 /* Portfolio filters*/
 
 .filter-btn {
+  font-family: inherit;
   background: #f4f4fd;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
+  color: var(--filter-btn-text-color);
+  cursor: pointer;
 }
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn:focus {
   background: #404bbf;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -188,7 +198,6 @@ body {
 }
 /* Portfolio cards */
 .portfolio-cards {
-  text-decoration: none;
   box-sizing: border-box;
   width: 360px;
   height: 420px;
@@ -196,18 +205,16 @@ body {
   border: 1px solid #e7e9fc;
 }
 .card-title {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2em;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--heading-text-color);
 }
 .card-desc {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--main-text-color);
 }
